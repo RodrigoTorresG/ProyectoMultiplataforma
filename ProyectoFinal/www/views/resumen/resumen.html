@@ -1,0 +1,17 @@
+<ion-view view-title="Detalle de Registros">
+    <ion-nav-buttons side="right">
+    <div class="padding">
+        <buttonng class="right button button-icon icon ion-close-circled" ng-click="volver()"></button>
+        </div>
+    </ion-nav-buttons>
+  <ion-content>
+    <div class="lista registros" ng-repeat="registro in registros">
+      <div class="item">
+        <h2>{{registro.db_tipo}}</h2>
+        <h2>{{registro.db_fecha}}</h2>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+

@@ -1,0 +1,25 @@
+<ion-view view-title="Usuario" ng-init="loadMap()">
+    <ion-nav-buttons side="right">
+    <div class="padding">
+        <button class="right button button-icon icon ion-plus" ng-click="create()"></button>
+        </div>
+    </ion-nav-buttons>
+    <ion-content>
+              <div class="resumen">  
+              <b>Nombre:</b>              
+                <p>{{user.db_nombre}}</p>
+                <b>Cargo:</b>
+                <p>{{user.db_cargo}}</p>
+              </div>
+              <div class="description">
+                <b>Descripcion:</b>
+                <p>{{user.db_descripcion}}</p>
+              </div>
+              <div class="datos">
+                <p><b>Nombre Completo:</b> {{user.db_nombrecompleto}}</p>
+                <p><b>Carnet de Identidad:</b> {{user.db_ci}}</p>
+                <p><b>Oficina:</b> {{user.db_oficina}}</p>
+                <p><b>Region:</b> {{user.db_region}}</p>
+              </div>
+    </ion-content>
+</ion-view>

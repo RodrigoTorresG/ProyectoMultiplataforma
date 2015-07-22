@@ -1,0 +1,25 @@
+<ion-view view-title="Registrar Ingreso/Salida">
+    <ion-nav-buttons side="right">
+    <div class="padding">
+        <buttonng class="right button button-icon icon ion-close-circled" ng-click="volver()"></button>
+        </div>
+    </ion-nav-buttons>
+    <ion-content>
+              <div class="registrar">  
+              <b>Dia: </b>
+              <label class="item item-input">
+  <span class="input-label">Date</span>
+  <input type="date" ng-model="fecha">
+</label>
+                <b>Tipo: </b><br/>
+    <label>
+    <input type="radio" ng-model="tipo" value="Entrada">
+    Entrada
+  </label><br/>
+  <label>
+    <input type="radio" ng-model="tipo" value="Salida">
+    Salida
+  </label><br/>
+              <button ng-click="guardar(tipo,fecha)" class="button button-block button-dark">Registrar</button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-view view-title="Editar Usuario" ng-init="loadMap()">
+    <ion-nav-buttons side="right">
+    <div class="padding">
+        <buttonng class="right button button-icon icon ion-close-circled" ng-click="volver()"></button>
+        </div>
+    </ion-nav-buttons>
+    <ion-content>
+              <div class="resumen">  
+              <b>Nombre: </b>{{user.db_nombre}}
+              <input type="text" ng-model="nombre" placeholder="Nuevo Nombre"/>
+                <b>Cargo: </b>{{user.db_cargo}}
+                <input ng-model="cargo" type="text" placeholder="Nuevo Cargo"/>
+              </div>
+              <div class="description">
+                <b>Descripcion:</b>{{user.db_descripcion}}
+                <input ng-model="descripcion" type="text" placeholder="Nueva Descripcion"/>
+              </div>
+              <div class="datos">
+                <b>Nombre Completo:</b>{{user.db_nombrecompleto}}
+                <input ng-model="nombrecompleto" type="text" placeholder="Nuevo Nombre Completo"/>
+                <b>Carnet de Identidad:</b>{{user.db_ci}}
+                <input ng-model="ci" type="text" placeholder="Nuevo Carnet de Identidad"/>
+                <b>Oficina:</b>{{user.db_oficina}}
+                <input ng-model="oficina" type="text" placeholder="Nueva Oficina"/>
+                <b>Region:</b>{{user.db_region}}
+                <input ng-model="region" type="text" placeholder="Nueva region"/>
+              </div>
+
+
+
+              <button ng-click="guardar(nombre,cargo,descripcion,nombrecompleto,ci,oficina,region)" class="button button-block button-dark">Guardar</button>
+    </ion-content>
+</ion-view>

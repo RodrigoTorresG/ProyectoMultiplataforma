@@ -1,0 +1,18 @@
+<ion-view view-title="Configuracion">
+<ion-nav-buttons side="right">
+<a class="button button-clear" href="#/home" nav-clear>Editar</a>
+</ion-nav-buttons>
+  <ion-content>
+    <div class="list">
+      <div class="item item-icon-left">
+        <i class="icon ion-android-person"></i> Name: {{config.name}}
+      </div>
+      <div class="item">
+        <img ng-src="{{config.image}}" class="image-list-thumb"/>
+      </div>
+      <div class="item item-icon-left">
+        <i class="icon ion-ios-location"></i> City: {{config.location.city}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
